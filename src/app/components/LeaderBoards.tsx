@@ -1,17 +1,9 @@
-// import Image from 'next/image'
-// import React from 'react'
+
 import l1 from "/images/l1.png";
 import l2 from "/images/l2.png";
 import l3 from "/images/l3.png";
 import l4 from "/images/l4.png";
-// import taskData from '../dashboard/task-data.json'
-// const LeaderBoards = () => {
-//   return (
-// {/*  */}
-//   )
-// }
 
-// export default LeaderBoards
 import React from "react";
 import Image from "next/image";
 

@@ -1,8 +1,9 @@
-import People from "./dropdowns/people";
+
 import axios from "axios";
 import Time from "./dropdowns/Time";
 import Type from "./dropdowns/Type";
 import taskData from "../dashboard/task-data.json";
+import People from "./dropdowns/people";
 export default function Header() {
     const handleDownload = async () => {
         try {
@@ -11,13 +12,7 @@ export default function Header() {
           if (!apiSecret) {
             throw new Error("API secret not found in the JSON file.");
           }
-    
-          // Send the POST request
-        //   const postResponse = await axios.post(
-        //     "https://testd5-img.azurewebsites.net/api/imgdownload",
-        //     { api: apiSecret },
-        //     { headers: { "Content-Type": "application/json" } }
-        //   );
+
         const postResponse =await axios.post('https://testd5-img.azurewebsites.net/api/imgdownload', apiSecret, {
             headers: {
               'Content-Type': 'multipart/form-data',
