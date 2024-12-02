@@ -3,7 +3,7 @@ import axios from "axios";
 import Time from "./dropdowns/Time";
 import Type from "./dropdowns/Type";
 import taskData from "../dashboard/task-data.json";
-import People from "./dropdowns/people";
+import People from "./dropdowns/People";
 export default function Header() {
     const handleDownload = async () => {
         try {
